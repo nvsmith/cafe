@@ -32,7 +32,7 @@ export default function TabLayout() {
                 name="index"
                 options={{
                     title: "Home",
-                    tabBarIcon: ({ color }) => (
+                    tabBarIcon: ({ color, focused }) => (
                         <IconSymbol size={28} name="house.fill" color={color} type="materialicons" />
                     ),
                 }}
@@ -41,8 +41,13 @@ export default function TabLayout() {
                 name="contact"
                 options={{
                     title: "Contact",
-                    tabBarIcon: ({ color }) => (
-                        <IconSymbol size={28} name="people-circle" color={color} type="ionicons" />
+                    tabBarIcon: ({ color, focused }) => (
+                        <IconSymbol
+                            size={28}
+                            name={focused ? "people-circle" : "people-circle-outline"}
+                            color={color}
+                            type="ionicons"
+                        />
                     ),
                 }}
             />

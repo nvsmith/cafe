@@ -6,19 +6,18 @@ import { SymbolWeight } from "expo-symbols";
 import React from "react";
 import { OpaqueColorValue, StyleProp, ViewStyle } from "react-native";
 
-// Add your SFSymbol to MaterialIcons and Ionicons mappings here.
+// See Expo Vector Icons here: https://icons.expo.fyi
 const MAPPING_MATERIALICONS = {
-    // See MaterialIcons here: https://icons.expo.fyi
+    // Add SFSymbol : MaterialIcons mappings here
     "house.fill": "home",
     "paperplane.fill": "send",
-    "chevron.left.forwardslash.chevron.right": "code",
-    "chevron.right": "chevron-right",
+    "heart.fill": "favorite",
 } as Partial<
     Record<import("expo-symbols").SymbolViewProps["name"], React.ComponentProps<typeof MaterialIcons>["name"]>
 >;
 
 const MAPPING_IONICONS = {
-    // Add Ionicons mappings here
+    // Add SFSymbol : Ionicons mappings here
     "people-circle": "people-circle",
     "people-circle-outline": "people-circle-outline",
 } as Partial<Record<import("expo-symbols").SymbolViewProps["name"], React.ComponentProps<typeof Ionicons>["name"]>>;
@@ -55,5 +54,5 @@ export function IconSymbol({
 
     // Optionally handle missing icon mappings
     console.warn(`Icon "${name}" not found in MAPPING for type "${type}"`);
-    return null;
+    return <MaterialIcons color={color} size={size} name="error" style={style} />; // Fallback icon
 }
