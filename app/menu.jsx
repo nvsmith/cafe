@@ -16,11 +16,11 @@ export default function MenuScreen() {
     const separatorComponent = <View style={styles.separator} />;
 
     // const headerComponent = <Text>Top of List</Text>;
-    const footerComponent = <Text style={{ color: theme.text }}>End of Menu</Text>;
+    const footerComponent = <Text style={{ color: theme.text }}>Stay For A While</Text>;
 
     return (
         <Container>
-            <Text>Menu Screen</Text>
+            <Text>Perfectly Roasted Coffees</Text>
             <FlatList
                 data={MENU_ITEMS}
                 keyExtractor={(item) => item.id.toString()}
