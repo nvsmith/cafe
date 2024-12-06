@@ -1,50 +1,136 @@
-# Welcome to your Expo app 👋
+<a id="readme-top"></a>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# Haven Brews
 
-## Get started
+<a href="https://tecnate.dev" target="_blank" rel="author">Tecnate</a> | Last Updated: 06 Dec 2024
 
-1. Install dependencies
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-   ```bash
-   npm install
-   ```
+<!-- ABOUT THE PROJECT -->
 
-2. Start the app
+## About The Project
 
-   ```bash
-    npx expo start
-   ```
+This is a Coffee Shop mobile app, designed to provide a simple and intuitive user experience for customers. This tutorial project was provided by Dave Gray to learn about React Native app development.
 
-In the output, you'll find options to open the app in a
+The app includes three primary screens:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+1. Home Screen: A central hub for navigation, allowing users to easily access the menu and contact information.
+2. Menu Screen: Displays a curated list of coffee beverages, complete with names, descriptions, and photos.
+3. Contact Screen: Provides essential store details, including the address, phone number, and operating hours, along with quick links to call or text the store directly.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+<div align="center">
 
-## Get a fresh project
+![screenshot1](screenshots/screenshot1.png "home")
+![screenshot2](screenshots/screenshot2.png "menu")
 
-When you're ready, run:
+</div>
 
-```bash
-npm run reset-project
-```
+### Built With
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+This is a project built with React Native and the Expo framework that implements:
 
-## Learn more
+-   Expo
+    -   Router, Splash Screen.
+-   React Native
+    -   Stylesheets, Safe Area View, Scroll View, Appearance, Pressable, Image Background, Flat Lists.
+-   Light/Dark themes.
+-   Custom icons and icon mapping.
 
-To learn more about developing your project with Expo, look at the following resources:
+<!-- GETTING STARTED -->
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Getting Started
 
-## Join the community
+This app is designed for mobile devices or viewport sizes. See the Usage section below.
 
-Join our community of developers creating universal apps.
+### Prerequisites
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Prior knowledge of:
+
+-   JavaScript, TypeScript, & React
+-   Node.js
+-   Terminal
+
+### Installation
+
+-   Expo Go installed on a physical device
+-   Node.js
+-   VS Code or any other preferred code editor or IDE installed
+-   A macOS, Linux, or Windows (PowerShell and WSL2) with a terminal window open
+
+<!-- USAGE EXAMPLES -->
+
+## Usage
+
+In the terminal, run `npx expo start` to start Expo (or `npx expo start -c` to start and clear the cache).
+
+-   Type `w` when prompted to see your project render in a web browser.
+-   Use your mobile device's camera to scan the QR code that generates in the terminal to see your project render on your mobile screen.
+
+### Troubleshooting
+
+If you encounter errors trying to start Expo on your mobile device or web browser:
+
+1. Delete your **node_modules** directory: `rm -rf node_modules`
+2. Reinstall your **node_modules** directory: `npm install`
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+TBD
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+This project is for learning/demonstration and is not being actively developed.
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the [MIT License](https://choosealicense.com/licenses/mit/).
+
+<!-- CONTACT -->
+
+## Contact
+
+Nate: [Website](https://tecnate.dev/) | [GitHub](https://github.com/nvsmith) | [Gravatar Profile](https://gravatar.com/nvsmith435)
+
+<!-- ACKNOWLEDGMENTS -->
+
+## Acknowledgments
+
+#### Dave Gray
+
+-   [React Native for Beginners](https://youtube.com/playlist?list=PL0Zuz27SZ-6OH3xackTS2KLcnmxx5wW7c&si=Hyvi2omsg2536uvf)
+
+#### README Template
+
+-   [Best README Template](https://github.com/othneildrew/Best-README-Template/tree/master)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
