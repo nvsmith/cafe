@@ -2,7 +2,7 @@
 
 # Haven Brews
 
-<a href="https://tecnate.dev" target="_blank" rel="author">Tecnate</a> | Last Updated: 06 Dec 2024
+<a href="https://tecnate.dev" target="_blank" rel="author">Tecnate</a> | Last Updated: 09 Dec 2024
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -76,10 +76,21 @@ Prior knowledge of:
 
 ### Installation
 
+You will need:
+
 -   Expo Go installed on a physical device
 -   Node.js
--   VS Code or any other preferred code editor or IDE installed
+-   A code editor
 -   A macOS, Linux, or Windows (PowerShell and WSL2) with a terminal window open
+
+To initialize a blank project from the terminal:
+
+1. Install the latest Expo: `npx create-expo-app@latest`
+2. Name your project and accept any prompts to continue.
+3. Move into the root directory: `cd myNewApp`
+4. Reset your project (moves the example files to a new directory): `npm run reset-project`.
+5. Delete the above directory containing the example files: `rm -rf app-example`
+6. If you plan to use only JavaScript rather than typescript, add the following to your **tsconfig.json** file's `include` object: `"**/*.jsx",`
 
 <!-- USAGE EXAMPLES -->
 
